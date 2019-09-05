@@ -1,6 +1,6 @@
 # deep-copy
 
-This is a [script](./deepCopy.js) I had an inspiration to write that contains a deep copy function structure. Since the [`.slice()`]() method and the [`spread`]() operator copy only the first level, they are effective with reference types than contain only primitive values. This is an attempt to solve that (I am aware of the JSON.parse() method but decided to re-invent the wheel so to speak). One obvious limitation  in this appraoch is call stack capacity (since I am using recursion), but for sufficiently non-complex reference structures (e.g. a trivial amount of nested arrays/objects) this should be a good solution.
+This is a [script](./deepCopy.js) I had an inspiration to write that contains a deep copy function structure. Since the [`.slice()`]() method and the [`spread`]() operator copy only the first level, they are effective with reference types that contain only primitive values. This is an attempt to solve that (I am aware of the JSON.parse() method but decided to re-invent the wheel so to speak). One obvious limitation in this appraoch is call stack capacity (since I am using recursion), but for sufficiently non-complex reference structures (e.g. a trivial amount of nested arrays/objects) this should be a good solution.
 
 ## Usage:
 ```js
